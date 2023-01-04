@@ -1,0 +1,33 @@
+// Paths ---------------------------
+$fonts-folder: '../../fonts';
+// $images-folder: '../../images';
+
+// Fonts ---------------------------
+$font-primary: 'Roboto-Regular', serif;
+$font-secondary: 'Roboto-Medium', serif;
+$font-light: 'Roboto-Light', serif;
+$font-bold: 'Roboto-Bold', serif;
+
+// Text ---------------------------
+$font-bs: 16px;
+$font-lg: 15px;
+$font-md: 14px;
+$font-sm: 13px;
+
+// Container
+$cont-width: 1070px;
+$cont-padding: 20px;
+
+// Resolutions ---------------------------
+// $screen-xl: 1440px;
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$screen-xxs: 360px;
+
+// Multiply size values for all devices
+$mlp-lg: 0.9;
+$mlp-md: 0.8;
+$mlp-sm: 0.7;
+$mlp-xs: 0.6;

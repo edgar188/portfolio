@@ -1,0 +1,89 @@
+@mixin font-face($font-name, $font-face-name, $font-style, $font-weight) {
+  $file-path: $fonts-folder + ('/') + $font-name;
+  @font-face {
+    font-family: $font-face-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($file-path + '.eot');
+    src: url($file-path + '.eot?#iefix') format('embedded-opentype'),
+        url($file-path + '.woff') format('woff'),
+        url($file-path + '.ttf') format('truetype'),
+        url($file-path + '.svg') format('svg');
+  }
+}
+
+@mixin bg-img($image: null, $repeat: null, $size: null, $color: null, $position: null) {
+    @if ($image) {
+      background-image: url($images-folder + $image);
+    }
+    background-color: $color;
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+@mixin position($top: null, $right: null, $bottom: null, $left: null, $pos: absolute) {
+  position: $pos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin translate($x: 0, $y: 0) {
+  transform: translate($x, $y);
+}
+
+@mixin center($position) {
+  @include position;
+  @if $position=='vertical' {
+      top: 50%;
+      @include translate($y: -50%);
+  }
+  @else if $position=='horizontal' {
+      left: 50%;
+      @include translate($x: -50%);
+  }
+  @else if $position=='both' {
+      top: 50%;
+      left: 50%;
+      @include translate($x: -50%, $y: -50%);
+  }
+}
+
+@mixin dsp-flex($wrap: null, $just-cont: null, $aln-itm: null, $dir: null, $aln-cont: null) {
+  display: flex;
+  flex-wrap: $wrap;
+  flex-direction: $dir;
+  justify-content: $just-cont;
+  align-items: $aln-itm;
+  align-content: $aln-cont;
+}
+
+@mixin ofl-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin line-clamp-ellipsis($lines: null) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin clear-after {
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin w-minmax($min: null, $max: null, $width: null) {
+  width: $width;
+  min-width: $min;
+  max-width: $max;
+}
+

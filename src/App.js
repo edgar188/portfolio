@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './styles/index.scss';
+import './assets/styles/index.scss';
 import { HOME, WORK, ABOUT, CONTACT } from './constants/paths';
-import Header from "./components/structure/Header";
-import Footer from "./components/structure/Footer";
+import Header from "./components/partials/Header";
+import Footer from "./components/partials/Footer";
 import Home from "./components/pages/Home"
 import Work from "./components/pages/Work";
 import About from "./components/pages/About";
