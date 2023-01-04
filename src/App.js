@@ -1,35 +1,27 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import { HOME, WORK, ABOUT, CONTACT } from './constants/paths';
+import Header from "./components/structure/Header";
+import Footer from "./components/structure/Footer";
 import Home from "./components/Home"
 import About from "./components/About";
+import Work from "./components/Work";
 import Contact from "./components/Contact";
-import './App.css';
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <div className="App">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-      </ul>
+      <div className='App'>
+        <Header />
+        <Routes>
+          <Route exact path={ HOME } element={< Home />}></Route>
+          <Route exact path={ WORK } element={< Work />}></Route>
+          <Route exact path={ ABOUT } element={< About />}></Route>
+          <Route exact path={ CONTACT } element={< Contact />}></Route>
+        </Routes>
+        <Footer />
       </div>
-
-      <Routes>
-        <Route exact path='/' element={< Home />}></Route>
-        <Route exact path='/about' element={< About />}></Route>
-        <Route exact path='/contact' element={< Contact />}></Route>
-      </Routes>
     </Router>
   );
 }
-
-export default App;
