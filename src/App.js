@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import './styles/index.scss';
 import { HOME, WORK, ABOUT, CONTACT } from './constants/paths';
 import Header from "./components/structure/Header";
 import Footer from "./components/structure/Footer";
-import Home from "./components/Home"
-import About from "./components/About";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
+import Home from "./components/pages/Home"
+import Work from "./components/pages/Work";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
 
 export default function App() {
   return (
