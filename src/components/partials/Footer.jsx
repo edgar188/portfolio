@@ -2,8 +2,10 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div>
-      <h2>Footer</h2>
-    </div>
+    <footer className='pt-4 pb-4'>
+      <div className='container text-center'>
+        <span>&copy; 2023 Edgar Hovhannisyan</span>
+      </div>
+    </footer>
   )
 }

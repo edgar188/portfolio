@@ -35,8 +35,16 @@
     transform: translate(-50%, -50%);
 }
 
+.dsp-flex {
+    @include dsp-flex();
+}
+
+.space-between {
+    @include dsp-flex(null, space-between);
+}
+
 // Elements horiz align to center with flexbox
-.flx-center {
+.flex-center {
     @include dsp-flex(null, center)
 }
 

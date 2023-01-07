@@ -1,0 +1,16 @@
+section.home {
+  @include position($top: 50%, $left: 50%);
+  @include translate($x: -50%, $y: -100%);
+
+  h1 {
+    font-size: 60px;
+    font-family: $font-bold;
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: $font-primary;
+  }
+}

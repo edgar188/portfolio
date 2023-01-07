@@ -14,12 +14,14 @@ export default function App() {
     <Router>
       <div className='App'>
         <Header />
-        <Routes>
-          <Route exact path={ HOME } element={< Home />}></Route>
-          <Route exact path={ WORK } element={< Work />}></Route>
-          <Route exact path={ ABOUT } element={< About />}></Route>
-          <Route exact path={ CONTACT } element={< Contact />}></Route>
-        </Routes>
+        <main>
+          <Routes>
+            <Route exact path={ HOME } element={< Home />}></Route>
+            <Route exact path={ WORK } element={< Work />}></Route>
+            <Route exact path={ ABOUT } element={< About />}></Route>
+            <Route exact path={ CONTACT } element={< Contact />}></Route>
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

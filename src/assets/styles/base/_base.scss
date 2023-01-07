@@ -20,6 +20,11 @@ body {
   box-sizing: inherit;
 }
 
+main {
+  @include position($pos: relative);
+  min-height: calc(100vh - 128px);
+}
+
 a {
   transition: opacity $trns-duration-xs;
 
