@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { HOME, WORK, ABOUT, CONTACT } from '../../constants/paths';
 
 export default function Header() {
@@ -13,16 +13,16 @@ export default function Header() {
         <nav>
           <ul className='dsp-flex'>
             <li>
-              <Link to={ HOME }>Home</Link>
+              <NavLink to={ HOME } activeClassName='active'>Home</NavLink>
             </li>
-            <li className='ml-4'>
-              <Link to={ WORK }>My Works</Link>
+            <li className='ml-5'>
+              <NavLink to={ WORK } activeClassName='active'>My Works</NavLink>
             </li>
-            <li className='ml-4'>
-              <Link to={ ABOUT }>About</Link>
+            <li className='ml-5'>
+              <NavLink to={ ABOUT } activeClassName='active'>About</NavLink>
             </li>
-            <li className='ml-4'>
-              <Link to={ CONTACT }>Contact</Link>
+            <li className='ml-5'>
+              <NavLink to={ CONTACT } activeClassName='active'>Contact</NavLink>
             </li>
           </ul>
         </nav>

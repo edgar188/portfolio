@@ -29,6 +29,16 @@ a {
   transition: opacity $trns-duration-xs;
 
   &:hover {
+    color: $color-base;
     opacity: $opacity-primary;
+  }
+
+  &.active {
+    font-family: $font-bold;
+    color: $color-base;
+    border-bottom: 2px solid $color-base;
+    &:hover {
+      opacity: $opacity-default
+    }
   }
 }

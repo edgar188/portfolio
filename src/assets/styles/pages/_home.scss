@@ -3,14 +3,24 @@ section.home {
   @include translate($x: -50%, $y: -100%);
 
   h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-family: $font-bold;
   }
 
   p {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 20px;
     font-style: italic;
-    font-family: $font-primary;
+    font-family: $font-light;
+  }
+
+  .socials {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .common-text {
+    color: $color-base;
+    font-family: $font-bold;
   }
 }

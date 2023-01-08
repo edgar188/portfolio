@@ -1,13 +1,28 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import { lightSpeedIn } from 'react-animations';
+import { rubberBand, flip } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
+// import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { COLOR_BASE } from '../../constants/colors';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: COLOR_BASE
+    }
+  },
+});
 
 const styles = {
-  lightSpeedIn: {
-    animation: 'x 2s',
-    animationName: Radium.keyframes(lightSpeedIn, 'lightSpeedIn')
+  rubberBand: {
+    animation: '3s',
+    animationName: Radium.keyframes(rubberBand, 'rubberBand')
+  },
+  flip: {
+    animation: '1.5s',
+    animationName: Radium.keyframes(flip, 'flip')
   }
 }
 
@@ -15,31 +30,32 @@ export default function Home() {
   return (
     <section className='home'>
       <div className='text-center'>
-        <h1>Hi, I'm Edgar,</h1>
-        <p className='mt-2'>
-          Software engineer specializing in the Ruby programming language and Ruby on Rails framework. 
-          <br/>
-          In addition, I've professional experience in front-end development.
-        </p>
-        <ul className='dsp-flex flex-center'>
+        <StyleRoot>
+          <h1 style={styles.flip}>Hi, I'm <span className='common-text'>Edgar</span>,</h1>
+          <p>
+            Software engineer specializing in the <span className='common-text'>Ruby</span> programming language and <span className='common-text'>Ruby on Rails</span> framework. 
+            <br/>
+            In addition, I've professional experience in front-end development.
+          </p>
+          <div style={styles.rubberBand} className='mt-8'>
+            <Button theme={theme} color='primary' variant='outlined' size='large'>Download CV</Button>
+          </div>
+        </StyleRoot>  
+        {/* <ul className='dsp-flex flex-center socials'>
           <li className='mr-3'>
             <a href=''>
-              <i className="fa-brands fa-freebsd"></i>
+              <FaGithubSquare />
             </a>
           </li>
           <li>
             <a href=''>
-              <i className="fa-brands fa-freebsd"></i>
-              <FontAwesomeIcon icon="fa-brands fa-freebsd" />
+              <FaLinkedin />
             </a>
           </li>
-        </ul>
+        </ul> */}
+  
       </div>
-      <StyleRoot>
-        <div style={styles.lightSpeedIn}>
-          <Button color='primary' variant='outlined' size='medium'>Primary</Button>
-        </div>
-      </StyleRoot>    
+
     </section>
   )
 }
