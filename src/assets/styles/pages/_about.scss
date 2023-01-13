@@ -1,0 +1,29 @@
+section.about {
+  h3 {
+    font-family: $font-secondary;
+    font-size: 18px;
+  }
+
+  p {
+    font-family: $font-secondary;
+  }
+
+  .list-about {
+    color: $color-base;
+    font-family: $font-primary;
+    font-size: 16px;
+
+    & > li {
+      list-style: initial;
+      color: $color-text-primary;
+      margin-bottom: 5px;
+      
+      ul {
+        & > li {
+          list-style: inside;
+          margin-bottom: 5px;
+        } 
+      }
+    }
+  }
+}
