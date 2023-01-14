@@ -1,16 +1,15 @@
 section.about {
   h3 {
     font-family: $font-secondary;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .section-left {
-    max-width: 60%;
+    max-width: 50%;
   }
 
   .section-right {
-    width: 35%;
-    margin-left: 10%;
+    margin-left: 15%;
   }
 
   .list-about {
@@ -19,12 +18,10 @@ section.about {
     color: $color-base;
     font-family: $font-primary;
     font-size: 16px;
+    line-height: 20px;
 
     p {
       font-family: $font-secondary;
-      & + span {
-        line-height: 20px;
-      }
     }
 
     & > li {

@@ -5,15 +5,6 @@ export default function About() {
     <section className='about pt-5 pb-5'>
       <div className='container dsp-flex'>
         <div className='section-left'>
-          <h3>CORE SKILLS</h3>
-          <ul className='list-about'>
-            <li>Ruby, Ruby on Rails, Redis, RSpec, Sidekiq</li>
-            <li>MySQL, PostgreSQL</li>
-            <li>JavaScript(ES6), React, Redux, Preact, jQuery, CoffeeScript</li>
-            <li>HTML5, CSS3, SASS(SCSS), LESS, Bootstrap, Material-UI</li>
-            <li>Figma, Adobe Photoshop, Adobe XD</li>
-            <li>Jira, Trello, Linear</li>
-          </ul>
           <h3>PROFESSIONAL EXPERIENCE</h3>
           <ul className='list-about'>
             <li>
@@ -47,27 +38,36 @@ export default function About() {
               </ul>
             </li>
           </ul>
+          <h3>EDUCATION</h3>
+          <ul className='list-about'>
+            <li>
+              <p className='mb-1'>NATIONAL POLYTECHNIC UNIVERSITY OF ARMENIA</p>
+              <span>M.S. in Engineering: Design and Modelling of Mechanical Systems | 2020-2022 | Yerevan, Armenia</span>
+            </li>
+            <li className='mt-3'>
+              <p className='mb-1'>NATIONAL POLYTECHNIC UNIVERSITY OF ARMENIA</p>
+              <span>B.S. in Engineering: Computer Design of Mechanical Systems | 2016-2020 | Yerevan, Armenia</span>
+            </li>
+          </ul>
+          <h3>COURSES</h3>
+          <ul className='list-about'>
+            <li>
+              <p className='mb-1'>ARMENIAN CODE ACADEMY</p>
+              <span>JavaScript/React Development | 2019 | Yerevan, Armenia</span>
+            </li>
+          </ul>
         </div>
 
         <div className='section-right'>
-          <h3>EDUCATION</h3>
-            <ul className='list-about'>
-              <li>
-                <p className='mb-1'>NATIONAL POLYTECHNIC UNIVERSITY OF ARMENIA</p>
-                <span>M.S. in Engineering: Design and Modelling of Mechanical Systems | 2020-2022 | Yerevan, Armenia</span>
-              </li>
-              <li className='mt-3'>
-                <p className='mb-1'>NATIONAL POLYTECHNIC UNIVERSITY OF ARMENIA</p>
-                <span>B.S. in Engineering: Computer Design of Mechanical Systems | 2016-2020 | Yerevan, Armenia</span>
-              </li>
-            </ul>
-            <h3>COURSES</h3>
-            <ul className='list-about'>
-              <li>
-                <p className='mb-1'>ARMENIAN CODE ACADEMY</p>
-                <span>JavaScript/React Development | 2019 | Yerevan, Armenia</span>
-              </li>
-            </ul>
+          <h3>CORE SKILLS</h3>
+          <ul className='list-about'>
+            <li>Ruby, Ruby on Rails, Redis, RSpec, Sidekiq</li>
+            <li>MySQL, PostgreSQL</li>
+            <li>JavaScript(ES6), React, Redux, Preact, jQuery, CoffeeScript</li>
+            <li>HTML5, CSS3, SASS(SCSS), LESS, Bootstrap, Material-UI</li>
+            <li>Figma, Adobe Photoshop, Adobe XD</li>
+            <li>Jira, Trello, Linear</li>
+          </ul>
           <h3>ADDITIONAL SKILLS</h3>
           <ul className='list-about'>
             <li>Work overtime based on team success and project outcomes.</li>
@@ -82,7 +82,9 @@ export default function About() {
           </ul>
           <h3>INTERESTS</h3>
           <ul className='list-about'>
-            <li>Classical guitar playing, gaming, hiking, and swimming.</li>
+            <li>Classical guitar playing</li>
+            <li>Hiking</li>
+            <li>Swimming</li>
           </ul>
         </div>
       </div>
