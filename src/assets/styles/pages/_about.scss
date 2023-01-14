@@ -4,24 +4,39 @@ section.about {
     font-size: 18px;
   }
 
-  p {
-    font-family: $font-secondary;
+  .section-left {
+    max-width: 60%;
+  }
+
+  .section-right {
+    width: 35%;
+    margin-left: 10%;
   }
 
   .list-about {
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: $color-base;
     font-family: $font-primary;
     font-size: 16px;
 
+    p {
+      font-family: $font-secondary;
+      & + span {
+        line-height: 20px;
+      }
+    }
+
     & > li {
       list-style: initial;
       color: $color-text-primary;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
       
       ul {
         & > li {
           list-style: inside;
           margin-bottom: 5px;
+          list-style: unset;
         } 
       }
     }

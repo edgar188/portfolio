@@ -66,13 +66,13 @@
 // Floats
 @each $key,$val in $resolutions {
   @media (min-width: $val) {
-      // Alignment
-      .float-#{$key}-left {
-          float: left;
-      }
-      .float#{$key}-right {
-          float: right;
-      }
+    // Alignment
+    .float-#{$key}-left {
+        float: left;
+    }
+    .float#{$key}-right {
+        float: right;
+    }
   }
 }
 
