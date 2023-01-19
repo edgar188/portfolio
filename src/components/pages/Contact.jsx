@@ -1,8 +1,50 @@
 import React from 'react';
+import { FaSkype } from "@react-icons/all-files/fa/FaSkype";
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaAt } from "react-icons/fa";
+import { FaFile } from "react-icons/fa";
+import { EMAIL, LINKEDIN, GITHUB, SKYPE } from '../../constants/links';
+// import { RESUME } from '../../logo.svg'
 
 export default function Contact() {
   return (
-    <section>
+    <section className='contact pt-5 pb-5'>
+      <div className='container'>
+        <h3>GET IN TOUCH WITH ME</h3>
+        <ul className='socials mt-5'>
+          <li>
+            <a href={ EMAIL }>
+              <FaAt className='email' />
+              <span>edgar.hovhannisyan08@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href={ LINKEDIN } target='blank'>
+              <FaLinkedinIn className='linkedin' />
+              <span>edgar-hovhannisyan-8b970b192</span>
+            </a>
+          </li>
+          <li>
+            <a href={ GITHUB } target='blank'>
+              <FaGithub className='github' />
+              <span>edgar188</span>
+            </a>
+          </li>
+          <li>
+            <a href={ SKYPE } target='blank'>
+              <FaSkype className='skype' />
+              <span>Edgar Hovhannisyan</span>
+            </a>
+          </li>
+          <li>
+            <a href={ '' } download>
+              <FaFile className='resume'/>
+              <span>Resume</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import { rubberBand, flipInY } from 'react-animations';
-import Radium, {StyleRoot} from 'radium';
+import Radium, { StyleRoot } from 'radium';
 import { createTheme } from '@mui/material/styles';
 import { COLOR_BASE } from '../../constants/colors';
 

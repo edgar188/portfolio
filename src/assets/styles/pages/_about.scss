@@ -1,7 +1,8 @@
 section.about {
   h3 {
     font-family: $font-secondary;
-    font-size: 20px;
+    font-size: 18px;
+    color: $color-secondary;
   }
 
   .section-left {
@@ -9,7 +10,7 @@ section.about {
   }
 
   .section-right {
-    margin-left: 15%;
+    margin-left: 14%;
   }
 
   .list-about {
@@ -22,18 +23,20 @@ section.about {
 
     p {
       font-family: $font-secondary;
+      color: $color-text-primary;
     }
 
     & > li {
       list-style: initial;
       color: $color-text-primary;
       margin-bottom: 10px;
-      
+      color: $color-text-secondary;
       ul {
         & > li {
           list-style: inside;
           margin-bottom: 5px;
           list-style: unset;
+
         } 
       }
     }

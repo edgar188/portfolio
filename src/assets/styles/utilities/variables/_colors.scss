@@ -2,21 +2,19 @@
 $color-light: #fff;
 $color-dark: #000;
 $color-base: #D30001;
+$color-secondary: rgba($color-base, .7);
 
 // Text Base Colors ---------------------------
 $color-text-primary: #333;
-$color-text-secondary: #999;
+$color-text-secondary: #555;
 $color-text-tertiary: #868686;
-$color-text-highlight: #359cd1;
 
 // Font-icon base Colors ---------------------------
 $color-icon-primary: #EAEBEC;
 
 // Background Base Colors ---------------------------
 $color-bg-primary: #1f1f1f;
-$color-bg-secondary:#359cd1;
 $color-bg-tertiary: #181818;
-$color-bg-map: rgba(#2e9bd4, 0.2);
 $color-bg-special: #707b81;
 
 // Link colors
@@ -24,7 +22,3 @@ $color-link-primary: #1e8bc2;
 
 // Border Colors ---------------------------
 $color-br-primary: #e7e7e7;
-$color-br-tertiary: #5aadd8;
-
-// Gradients ---------------------------
-$ln-gr-primary: linear-gradient(164deg, #1e8bc3, #44a6d9);

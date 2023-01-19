@@ -1,0 +1,56 @@
+section.contact {
+  h3 {
+    font-family: $font-secondary;
+    font-size: 18px;
+    color: $color-secondary;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .socials {
+    text-align: center;
+
+    & > li {
+      font-size: 20px;
+      font-family: $font-primary;
+      margin-bottom: 15px;
+      color: $color-text-secondary;
+
+      a {
+        @include dsp-flex($just-cont: center, $aln-itm: center);
+        &:hover {
+          color: $color-text-secondary;
+          opacity: .8;
+        }
+      }
+
+      span {
+        margin-left: 10px;
+      }
+
+      svg {
+        font-size: 24px;
+
+        &.email {
+          color: #459d23;
+        }
+
+        &.linkedin {
+          color: #0077B5;
+        }
+
+        &.github {
+          color: #333;
+        }
+
+        &.skype {
+          color: #00aff0;
+        }
+
+        &.resume {
+          color: #D67C05;
+        }
+      }
+    }
+  }
+}

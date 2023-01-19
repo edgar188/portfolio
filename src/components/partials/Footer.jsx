@@ -1,7 +1,7 @@
 import React from 'react';
-import { GITHUB, LINKEDIN } from '../../constants/links';
-import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
+import { LINKEDIN, GITHUB } from '../../constants/links';
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
 
 export default function Footer() {
   return (
@@ -10,13 +10,13 @@ export default function Footer() {
         <div>&copy; 2023 Edgar Hovhannisyan</div>
         <ul className='dsp-flex flex-center ml-2'>
           <li className='mr-2'>
-            <a href={ GITHUB } target='blank'>
-              <FaGithubSquare />
+            <a href={ LINKEDIN } target='blank'>
+              <FaLinkedin />
             </a>
           </li>
           <li>
-            <a href={ LINKEDIN} target='blank'>
-              <FaLinkedin />
+            <a href={ GITHUB } target='blank'>
+              <FaGithubSquare />
             </a>
           </li>
         </ul>
