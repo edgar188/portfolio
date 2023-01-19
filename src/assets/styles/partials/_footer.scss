@@ -1,5 +1,16 @@
 footer {
   ul {
     font-size: 22px;
+
+    svg {
+      &.linkedin {
+        color: #0077B5;
+      }
+
+      &.github {
+        color: #333;
+      }
+    }
   }
+  
 }

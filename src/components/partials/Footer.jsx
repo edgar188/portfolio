@@ -1,7 +1,7 @@
 import React from 'react';
 import { LINKEDIN, GITHUB } from '../../constants/links';
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
-import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
+import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
 
 export default function Footer() {
   return (
@@ -11,12 +11,12 @@ export default function Footer() {
         <ul className='dsp-flex flex-center ml-2'>
           <li className='mr-2'>
             <a href={ LINKEDIN } target='blank'>
-              <FaLinkedin />
+              <FaLinkedinIn className='linkedin' />
             </a>
           </li>
           <li>
             <a href={ GITHUB } target='blank'>
-              <FaGithubSquare />
+              <FaGithub className='github' />
             </a>
           </li>
         </ul>

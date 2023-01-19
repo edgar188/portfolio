@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaSkype } from "@react-icons/all-files/fa/FaSkype";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { FaAt } from "react-icons/fa";
-import { FaFile } from "react-icons/fa";
+import { FaSkype } from '@react-icons/all-files/fa/FaSkype';
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
+import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
+import { FaAt } from '@react-icons/all-files/fa/FaAt';
+import { FaFile } from '@react-icons/all-files/fa/FaFile';
 import { EMAIL, LINKEDIN, GITHUB, SKYPE } from '../../constants/links';
-// import { RESUME } from '../../logo.svg'
+import RESUME from '../../assets/images/resume.svg'
 
 export default function Contact() {
   return (
@@ -38,7 +38,7 @@ export default function Contact() {
             </a>
           </li>
           <li>
-            <a href={ '' } download>
+            <a href={ RESUME } download>
               <FaFile className='resume'/>
               <span>Resume</span>
             </a>
