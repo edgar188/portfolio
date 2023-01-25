@@ -7,7 +7,7 @@ header {
 
   .logo-link {
     color: $color-base;
-    font-size: 18px;
+    font-size: $font-bs;
     font-family: $font-bold;
     &:hover {
       opacity: $opacity-default;

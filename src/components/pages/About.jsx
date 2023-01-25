@@ -8,8 +8,18 @@ export default function About() {
           <h3>PROFESSIONAL EXPERIENCE</h3>
           <ul className='list-about'>
             <li>
+              <p className='mb-1'>Full-STACK(RUBY/ROR/REACT) DEVELOPER</p>
+              <p>November 2022 - Present | STDev Armenia && Rankbreeze CA | Yerevan, Armenia</p>
+              <ul className='mt-2'>
+                <li>Work on a dedicated project.</li>
+                <li>Experience working with an international team.</li>
+                <li>Experience working together with a teammate in different time zones.</li>
+                <li>Experience developing extensions for Chrome.</li>
+              </ul>
+            </li>
+            <li>
               <p className='mb-1'>RUBY DEVELOPER</p>
-              <p>March 2020 - Present | STDev Armenia | Yerevan, Armenia</p>
+              <p>March 2020 - November 2022 | STDev Armenia | Yerevan, Armenia</p>
               <ul className='mt-2'>
                 <li>Experience building and interacting with Restful APIs.</li>
                 <li>Experience writing unit tests, participating in design discussions, data shape and business logic.</li>
@@ -82,9 +92,9 @@ export default function About() {
           </ul>
           <h3>INTERESTS</h3>
           <ul className='list-about'>
-            <li>Classical guitar playing</li>
-            <li>Hiking</li>
-            <li>Swimming</li>
+            <li>Classical guitar playing.</li>
+            <li>Swimming.</li>
+            <li>Hiking.</li>
           </ul>
         </div>
       </div>
