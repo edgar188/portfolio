@@ -4,7 +4,7 @@ import { rubberBand, flipInY } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import { createTheme } from '@mui/material/styles';
 import { COLOR_BASE } from '../../constants/colors';
-import RESUME from '../../assets/images/resume.svg'
+import RESUME from '../../assets/images/resume.svg';
 
 const theme = createTheme({
   palette: {

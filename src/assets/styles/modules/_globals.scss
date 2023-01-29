@@ -53,6 +53,11 @@
     @include dsp-flex(null, null, center);
 }
 
+// Elements vert. align to self-end with flexbox
+.alg-self-end {
+    @include dsp-flex(null, null, self-end);
+}
+
 // Flex direction column
 .flx-dir-col {
     @include dsp-flex(wrap, null, null, column);
