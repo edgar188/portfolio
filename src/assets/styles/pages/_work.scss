@@ -1,7 +1,7 @@
 section.work {
   h3 {
     font-family: $font-secondary;
-    font-size: 18px;
+    font-size: 20px;
     color: $color-secondary;
     text-align: center;
   }
@@ -10,7 +10,6 @@ section.work {
     font-family: $font-secondary;
     color: $color-text-primary;
     font-weight: 500;
-    margin-bottom: 10px;
     font-size: 18px;
     color: $color-base;
     &:hover {
@@ -20,7 +19,7 @@ section.work {
 
   .works-list {
     color: $color-text-secondary;
-    max-width: 80%;
+    max-width: 70%;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: $font-primary;
@@ -32,12 +31,13 @@ section.work {
 
     img {
       width: 50px;
-      height: 40px;
+      height: 45px;
+      border-radius: 5px;
     }
 
     p {
       font-size: 16px;
-      padding-left: 60px;
+      padding-left: 62px;
     }
   }
 }
