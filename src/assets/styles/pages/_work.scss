@@ -9,11 +9,11 @@ section.work {
   .title-link {
     font-family: $font-secondary;
     color: $color-text-primary;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     color: $color-base;
     &:hover {
-      opacity: 1;
+      opacity: $opacity-default;
     }
   }
 
@@ -32,7 +32,8 @@ section.work {
     img {
       width: 50px;
       height: 45px;
-      border-radius: 5px;
+      padding: 5px;
+      border-radius: $br-default;
     }
 
     p {

@@ -18,7 +18,7 @@ export default function Work() {
           <li>
             <a className='dsp-flex alg-center title-link' href={ GIT_LINKS.rubyInternship } target='blank'>
               <img src={RUBY_IMG} alt='Ruby img' />
-              <span className='pl-2'>Ruby internship program at STDev</span>
+              <span className='pl-2'>Ruby/RoR internship program at STDev</span>
             </a>
             <p>I'm proud to have excelled in the Ruby internship program which lasts three months as a mentor at STDev. 
               The internship program was managed by me depending on my knowledge and experience. I chose a learning approach with my future colleagues from scratch and gradual growth.

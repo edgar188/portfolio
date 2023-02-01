@@ -19,7 +19,7 @@ section.contact {
         @include dsp-flex($just-cont: center, $aln-itm: center);
         &:hover {
           color: $color-text-secondary;
-          opacity: .8;
+          opacity: $opacity-primary;
         }
       }
 
