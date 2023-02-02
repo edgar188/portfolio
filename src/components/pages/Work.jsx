@@ -12,8 +12,8 @@ import LAYOUT_3 from '../../assets/images/layout-3.png';
 export default function Work() {
   return (
     <section className='work container pt-5 pb-5'>
-      <div className=''>
-        <h3>CHECK OUT SOME OF MY WORK</h3>
+      <div>
+        <h3 className='text-center'>CHECK OUT SOME OF MY WORK</h3>
         <ul className='works-list'>
           <li>
             <a className='dsp-flex alg-center title-link' href={ GIT_LINKS.rubyInternship } target='blank'>

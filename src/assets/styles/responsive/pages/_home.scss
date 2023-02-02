@@ -1,0 +1,19 @@
+@media (max-width: map-get($resolutions, md)) {
+  section.home {
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+}
+
+@media (max-width: map-get($resolutions, xs)) {
+}

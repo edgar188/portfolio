@@ -36,7 +36,7 @@ export default function Home() {
             <br/>
             In addition, I've professional experience in front-end development.
           </p>
-          <div style={ styles.rubberBand } className='mt-8'>
+          <div style={ styles.rubberBand }>
             <Button href={ RESUME } theme={ theme } color='primary' variant='outlined' size='large' download>Download CV</Button>
           </div>
         </StyleRoot>

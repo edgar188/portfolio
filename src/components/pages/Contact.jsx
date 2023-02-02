@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <section className='contact container pt-5 pb-5'>
       <div>
-        <h3>GET IN TOUCH WITH ME</h3>
+        <h3 className='text-center'>GET IN TOUCH WITH ME</h3>
         <ul className='socials mt-5'>
           <li>
             <a href={ EMAIL }>

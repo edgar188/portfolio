@@ -1,0 +1,23 @@
+@media (max-width: map-get($resolutions, lg)) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: map-get($resolutions, md)) {
+  .container {
+    max-width: 780px;
+  }
+
+  section {
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+}
+
+@media (max-width: map-get($resolutions, xs)) {
+}
