@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section className='about pt-5 pb-5'>
-      <div className='container dsp-flex'>
+    <section className='about container pt-5 pb-5'>
+      <div className='dsp-flex'>
         <div className='section-left'>
           <h3>PROFESSIONAL EXPERIENCE</h3>
           <ul className='list-about'>

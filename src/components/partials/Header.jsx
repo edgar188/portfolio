@@ -5,8 +5,8 @@ import Avatar from 'avataaars'
 
 export default function Header() {
   return (
-    <header className='pt-4 pb-4'>
-      <div className='container dsp-flex space-between alg-center'>
+    <header className='container pt-4 pb-4'>
+      <div className='dsp-flex space-between alg-center'>
         <a href={ HOME } className='logo-link'>
           <Avatar
             className='logo'
