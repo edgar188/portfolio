@@ -5,8 +5,8 @@ import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
 
 export default function Footer() {
   return (
-    <footer className='pt-4 pb-4'>
-      <div className='container dsp-flex flex-center alg-center'>
+    <footer className='container pt-4 pb-4'>
+      <div className='dsp-flex flex-center alg-center'>
         <div>&copy; 2023 Edgar Hovhannisyan</div>
         <ul className='dsp-flex flex-center ml-2'>
           <li className='mr-2'>

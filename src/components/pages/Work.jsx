@@ -11,8 +11,8 @@ import LAYOUT_3 from '../../assets/images/layout-3.png';
 
 export default function Work() {
   return (
-    <section className='work pt-5 pb-5'>
-      <div className='container'>
+    <section className='work container pt-5 pb-5'>
+      <div className=''>
         <h3>CHECK OUT SOME OF MY WORK</h3>
         <ul className='works-list'>
           <li>
@@ -76,7 +76,7 @@ export default function Work() {
           <li>
             <a className='dsp-flex alg-center title-link' href={ GIT_LINKS.layout_2 } target='blank'>
               <img src={LAYOUT_2} alt='Layout img' />
-              <span className='pl-2'>Layout 2 (Restaurant Profile)</span>
+              <span className='pl-2'>Layout 2 (Business Reviews)</span>
             </a>
             <p>
               Simple layout was written in pure HTML/SASS.
@@ -85,7 +85,7 @@ export default function Work() {
           <li>
             <a className='dsp-flex alg-center title-link' href={ GIT_LINKS.layout_3 } target='blank'>
               <img src={LAYOUT_3} alt='Layout img' />
-              <span className='pl-2'>Layout 3 (Business Reviews)</span>
+              <span className='pl-2'>Layout 3 (Restaurant Profile)</span>
             </a>
             <p>
               Simple layout was written in pure HTML/SASS.

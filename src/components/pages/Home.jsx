@@ -27,7 +27,7 @@ const styles = {
 
 export default function Home() {
   return (
-    <section className='home'>
+    <section className='home container'>
       <div className='text-center'>
         <StyleRoot>
           <h1 style={ styles.flipInY }>Hi, I'm <span className='common-text'>Edgar</span>,</h1>

@@ -16,7 +16,7 @@ export const [
     toDoApp: 'https://edgar188.github.io/toDoApp/',
     carousel: 'https://edgar188.github.io/Carousel/',
     layout_1: 'https://edgar188.github.io/kappe-creatives/',
-    layout_2: 'https://edgar188.github.io/Restaurant-Profile/',
-    layout_3: 'https://edgar188.github.io/reviews-rating/'
+    layout_2: 'https://edgar188.github.io/business-reviews/',
+    layout_3: 'https://edgar188.github.io/Restaurant-Profile/'
   }
 ];
