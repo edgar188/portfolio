@@ -2,6 +2,19 @@
 }
 
 @media (max-width: map-get($resolutions, sm)) {
+  section.about {
+    & > div {
+      @include dsp-flex($dir: column);
+    }
+
+    .section-left {
+      max-width: 90%;
+    }
+  
+    .section-right {
+      margin-left: 0;
+    }
+  }
 }
 
 @media (max-width: map-get($resolutions, xs)) {

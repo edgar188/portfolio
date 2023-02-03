@@ -1,12 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { HOME, ABOUT, WORK, CONTACT } from '../../constants/paths';
-import Avatar from 'avataaars'
+import { FaBars } from '@react-icons/all-files/fa/FaBars';
+import { FaWindowClose } from '@react-icons/all-files/fa/FaWindowClose';
+import Avatar from 'avataaars';
 
 export default function Header() {
   return (
     <header className='container pt-4 pb-4'>
-      <div className='dsp-flex space-between alg-center'>
+      <div className='dsp-flex space-between alg-self-end'>
         <a href={ HOME } className='logo-link'>
           <Avatar
             className='logo'
@@ -39,6 +41,12 @@ export default function Header() {
               <NavLink to={ CONTACT } activeClassName='active'>Contact</NavLink>
             </li>
           </ul>
+          <a class="btn-clear nav" id="btn-nav">
+            <FaBars />
+          </a>
+          <a class="btn-clear close" id="btn-close">
+            <FaWindowClose />
+          </a>
         </nav>
       </div>
     </header>

@@ -3,12 +3,22 @@ header {
     & > ul {
       font-size: 18px;
     }
+
+    & > a {
+      display: none;
+      font-size: 24px;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   .logo-link {
     color: $color-base;
     font-size: $font-bs;
     font-family: $font-bold;
+
     &:hover {
       opacity: $opacity-default;
     }

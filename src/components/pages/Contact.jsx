@@ -9,7 +9,7 @@ import RESUME from '../../assets/images/resume.svg';
 
 export default function Contact() {
   return (
-    <section className='contact container pt-5 pb-5'>
+    <section className='contact container pt-6 pb-4'>
       <div>
         <h3 className='text-center'>GET IN TOUCH WITH ME</h3>
         <ul className='socials mt-5'>

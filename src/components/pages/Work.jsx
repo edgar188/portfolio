@@ -11,7 +11,7 @@ import LAYOUT_3 from '../../assets/images/layout-3.png';
 
 export default function Work() {
   return (
-    <section className='work container pt-5 pb-5'>
+    <section className='work container pt-6 pb-4'>
       <div>
         <h3 className='text-center'>CHECK OUT SOME OF MY WORK</h3>
         <ul className='works-list'>

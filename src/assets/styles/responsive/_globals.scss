@@ -17,6 +17,9 @@
 }
 
 @media (max-width: map-get($resolutions, sm)) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 @media (max-width: map-get($resolutions, xs)) {

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section className='about container pt-5 pb-5'>
+    <section className='about container pt-6 pb-4'>
       <div className='dsp-flex'>
         <div className='section-left'>
           <h3>PROFESSIONAL EXPERIENCE</h3>
