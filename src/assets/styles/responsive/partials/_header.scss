@@ -1,5 +1,10 @@
 @media (max-width: map-get($resolutions, sm)) {
   header {
+    & > div {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
     nav {
       & > ul {
         @include position(0, null, null, 0, fixed);
@@ -39,4 +44,10 @@
 }
 
 @media (max-width: map-get($resolutions, xs)) {
+  header {
+    & > div {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
 }

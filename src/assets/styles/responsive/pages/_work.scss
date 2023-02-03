@@ -4,10 +4,17 @@
 @media (max-width: map-get($resolutions, sm)) {
   section.work {
     .works-list {
-      max-width: 90%;
+      margin-left: 20px;
+      max-width: 95%;
     }
   }
 }
 
 @media (max-width: map-get($resolutions, xs)) {
+  section.work {
+    .works-list {
+      margin-left: 15px;
+      max-width: 90%;
+    }
+  }
 }

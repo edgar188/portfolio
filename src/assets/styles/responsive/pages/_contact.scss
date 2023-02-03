@@ -2,6 +2,15 @@
 }
 
 @media (max-width: map-get($resolutions, sm)) {
+  section.contact {
+    .socials {
+      margin-top: 20px;
+
+      & > li {
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 @media (max-width: map-get($resolutions, xs)) {
