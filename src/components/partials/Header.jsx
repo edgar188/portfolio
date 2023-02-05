@@ -6,6 +6,11 @@ import { FaWindowClose } from '@react-icons/all-files/fa/FaWindowClose';
 import Avatar from 'avataaars';
 
 export default function Header() {
+  function handleClick() {
+    let nav = document.getElementById('nav');
+    nav.className = nav.classList.contains('show') ? '' : 'show';
+  }
+
   return (
     <header className='container pt-4 pb-4'>
       <div className='dsp-flex space-between alg-self-end'>
@@ -26,25 +31,25 @@ export default function Header() {
           />
           <span className='ml-1'>Edgar Hovhannisyan</span>
         </a>
-        <nav>
+        <nav id='nav'>
           <ul className='dsp-flex'>
             <li>
-              <NavLink to={ HOME } activeClassName='active'>Home</NavLink>
+              <NavLink to={ HOME } activeClassName='active' onClick={handleClick}>Home</NavLink>
             </li>
-            <li className='ml-5'>
-              <NavLink to={ ABOUT } activeClassName='active'>About</NavLink>
+            <li>
+              <NavLink to={ ABOUT } activeClassName='active' onClick={handleClick}>About</NavLink>
             </li>
-            <li className='ml-5'>
-              <NavLink to={ WORK } activeClassName='active'>My Works</NavLink>
+            <li>
+              <NavLink to={ WORK } activeClassName='active' onClick={handleClick}>My Works</NavLink>
             </li>
-            <li className='ml-5'>
-              <NavLink to={ CONTACT } activeClassName='active'>Contact</NavLink>
+            <li>
+              <NavLink to={ CONTACT } activeClassName='active' onClick={handleClick}>Contact</NavLink>
             </li>
           </ul>
-          <a class="btn-clear nav" id="btn-nav">
+          <a class="btn-clear nav" onClick={handleClick}>
             <FaBars />
           </a>
-          <a class="btn-clear close" id="btn-close">
+          <a class="btn-clear close" onClick={handleClick}>
             <FaWindowClose />
           </a>
         </nav>

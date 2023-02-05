@@ -7,18 +7,11 @@ $color-secondary: rgba($color-base, .7);
 // Text Base Colors ---------------------------
 $color-text-primary: #333;
 $color-text-secondary: #555;
-$color-text-tertiary: #868686;
 
-// Font-icon base Colors ---------------------------
-$color-icon-primary: #EAEBEC;
-
-// Background Base Colors ---------------------------
-$color-bg-primary: #1f1f1f;
-$color-bg-tertiary: #181818;
-$color-bg-special: #707b81;
-
-// Link colors
-$color-link-primary: #1e8bc2;
-
-// Border Colors ---------------------------
-$color-br-primary: #e7e7e7;
+$color-socials: (
+  email: #459d23,
+  linkedin: #0077B5,
+  github: #333,
+  skype: #00aff0,
+  resume: #D67C05
+) !default;

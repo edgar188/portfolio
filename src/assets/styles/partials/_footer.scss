@@ -4,11 +4,11 @@ footer {
 
     svg {
       &.linkedin {
-        color: #0077B5;
+        color: map-get($color-socials, linkedin);
       }
 
       &.github {
-        color: #333;
+        color: map-get($color-socials, github);
       }
     }
   }

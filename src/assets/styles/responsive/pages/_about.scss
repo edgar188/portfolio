@@ -19,4 +19,15 @@
 }
 
 @media (max-width: map-get($resolutions, xs)) {
+  section.about {
+
+    .section-left {
+      margin-left: 15px;
+      max-width: 100%;
+    }
+  
+    .section-right {
+      margin-left: 15px;
+    }
+  }
 }

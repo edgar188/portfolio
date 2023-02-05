@@ -1,38 +1,17 @@
 // Border Radiuses ---------------------------
 $br-default: 4px;
-$br-sm: 8px;
-$br-md: 10px;
-$br-lg: 30px;
-$br-rounded: 50%;
 $br-none: 0;
 
 // Transitions ---------------------------
 $trns-duration: .3s;
 $trns-duration-xs: .1s;
-$trns-duration-sm: .5s;
-$trns-duration-md: .5s;
-$trns-duration-lg: 1s;
-$trns-delay: 50ms;
-
-// Animation durations ---------------------------
-$anim-duration: .3s;
-$anim-duration-sm: 3s;
-$anim-duration-md: 6s;
-$anim-duration-lg: 10s;
 
 // Opacities ---------------------------
 $opacity-none: 0;
 $opacity-primary: .7;
-$opacity-secondary: .5;
-$opacity-tertiary: .15;
 $opacity-default: 1;
 
 // Z-index ---------------------------
 $z-index-min: 0;
 $z-index-mid: 10;
 $z-index-max: 100;
-
-// Box Shadow
-$box-shadow-primary: 5px 0 10px rgba($color-dark, $opacity-tertiary);
-$box-shadow-secondary: 5px 0 20px rgba(#363636, $opacity-tertiary);
-$box-shadow-secondary-hv: 5px 0 20px rgba(#363636, $opacity-secondary);

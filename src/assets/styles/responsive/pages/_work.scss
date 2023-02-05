@@ -13,8 +13,12 @@
 @media (max-width: map-get($resolutions, xs)) {
   section.work {
     .works-list {
-      margin-left: 15px;
-      max-width: 90%;
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    .title-link {
+      font-size: 16px;
     }
   }
 }

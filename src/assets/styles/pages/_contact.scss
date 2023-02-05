@@ -24,23 +24,23 @@ section.contact {
         font-size: 24px;
 
         &.email {
-          color: #459d23;
+          color: map-get($color-socials, email);
         }
 
         &.linkedin {
-          color: #0077B5;
+          color: map-get($color-socials, linkedin);
         }
 
         &.github {
-          color: #333;
+          color: map-get($color-socials, github);
         }
 
         &.skype {
-          color: #00aff0;
+          color: map-get($color-socials, skype);
         }
 
         &.resume {
-          color: #D67C05;
+          color: map-get($color-socials, resume);
         }
       }
     }
