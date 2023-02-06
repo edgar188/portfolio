@@ -4,6 +4,7 @@ import { HOME, ABOUT, WORK, CONTACT } from '../../constants/paths';
 import { FaBars } from '@react-icons/all-files/fa/FaBars';
 import { FaWindowClose } from '@react-icons/all-files/fa/FaWindowClose';
 import Avatar from 'avataaars';
+import SwitchMode from '../fields/SwitchMode';
 
 export default function Header() {
   function handleClick() {
@@ -44,6 +45,9 @@ export default function Header() {
             </li>
             <li>
               <NavLink to={ CONTACT } activeClassName='active' onClick={handleClick}>Contact</NavLink>
+            </li>
+            <li>
+              <SwitchMode />
             </li>
           </ul>
           <a class="btn-clear nav" onClick={handleClick}>

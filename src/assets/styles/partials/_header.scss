@@ -9,6 +9,15 @@ header {
         &:first-of-type {
           margin-left: 0;
         }
+
+        &:last-of-type {
+          position: relative;
+          margin-left: 20px;
+
+          .MuiFormGroup-root {
+            @include position($top: -14px);
+          }
+        }
       }
     }
 

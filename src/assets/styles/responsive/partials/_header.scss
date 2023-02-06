@@ -40,6 +40,12 @@
           margin-bottom: 20px;
           display: block;
           width: 100%;
+
+          &:last-of-type {
+            .MuiFormGroup-root {
+              @include center('horizontal');
+            }
+          }
         }
       }
       
