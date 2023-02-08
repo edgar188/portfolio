@@ -35,25 +35,25 @@ export default function Header() {
         <nav id='nav'>
           <ul className='dsp-flex'>
             <li>
-              <NavLink to={ HOME } activeClassName='active' onClick={handleClick}>Home</NavLink>
+              <NavLink to={ HOME } activeclassname='active' onClick={handleClick}>Home</NavLink>
             </li>
             <li>
-              <NavLink to={ ABOUT } activeClassName='active' onClick={handleClick}>About</NavLink>
+              <NavLink to={ ABOUT } activeclassname='active' onClick={handleClick}>About</NavLink>
             </li>
             <li>
-              <NavLink to={ WORK } activeClassName='active' onClick={handleClick}>My Works</NavLink>
+              <NavLink to={ WORK } activeclassname='active' onClick={handleClick}>My Works</NavLink>
             </li>
             <li>
-              <NavLink to={ CONTACT } activeClassName='active' onClick={handleClick}>Contact</NavLink>
+              <NavLink to={ CONTACT } activeclassname='active' onClick={handleClick}>Contact</NavLink>
             </li>
             <li>
               <SwitchMode />
             </li>
           </ul>
-          <a class="btn-clear nav" onClick={handleClick}>
+          <a className="btn-clear nav" onClick={handleClick}>
             <FaBars />
           </a>
-          <a class="btn-clear close" onClick={handleClick}>
+          <a className="btn-clear close" onClick={handleClick}>
             <FaWindowClose />
           </a>
         </nav>
