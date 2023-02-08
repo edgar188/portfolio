@@ -42,3 +42,10 @@ a {
     }
   }
 }
+
+.app {
+  &.dark {
+    background: #282C34;
+    color: #fff;
+  }
+}

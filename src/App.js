@@ -13,7 +13,7 @@ import Contact from "./components/pages/Contact";
 export default function App() {
   return (
     <Router>
-      <div className='App'>
+      <div className='app' id='app'>
         <Header />
         <main>
           <Routes>
