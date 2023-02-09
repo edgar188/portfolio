@@ -2,17 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import { rubberBand, flipInY } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
-import { createTheme } from '@mui/material/styles';
-import { COLOR_BASE } from '../../constants/colors';
 import RESUME from '../../assets/images/resume.svg';
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: COLOR_BASE
-    }
-  },
-});
 
 const styles = {
   rubberBand: {
@@ -37,7 +27,7 @@ export default function Home() {
             In addition, I've professional experience in front-end development.
           </p>
           <div style={ styles.rubberBand }>
-            <Button href={ RESUME } theme={ theme } color='primary' variant='outlined' size='large' download>Download CV</Button>
+            <Button href={ RESUME } variant='outlined' size='large' download>Download CV</Button>
           </div>
         </StyleRoot>
       </div>

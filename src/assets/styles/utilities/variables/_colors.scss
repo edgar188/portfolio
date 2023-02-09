@@ -1,6 +1,5 @@
-// Color Usage ---------------------------
+// Color Usage --------------------------------
 $color-light: #fff;
-$color-dark: #000;
 $color-base: #D30001;
 $color-secondary: rgba($color-base, .7);
 
@@ -14,4 +13,25 @@ $color-socials: (
   github: #333,
   skype: #00aff0,
   resume: #D67C05
+) !default;
+
+// Dark Mode Colors ------------------------------
+
+// Color Usage -----------------------------------
+$dark-color-base: #22b3ff;
+$dark-color-secondary: #4871e0;
+
+// Text Base Colors -------------------------------
+$dark-color-text-primary: #F5F5F5;
+$dark-color-text-secondary: #E0E0E0;
+
+// Bg Colors --------------------------------------
+$dark-bg-primary: #121212;
+
+$dark-color-socials: (
+  email: #61d833,
+  linkedin: #00a8ff,
+  github: #fff,
+  skype: #1cafe5,
+  resume: #e19533
 ) !default;

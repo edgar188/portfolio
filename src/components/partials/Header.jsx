@@ -11,7 +11,7 @@ export default function Header() {
     let nav = document.getElementById('nav');
     nav.className = nav.classList.contains('show') ? '' : 'show';
   }
-
+  
   return (
     <header className='container pt-4 pb-4'>
       <div className='dsp-flex space-between alg-self-end'>
@@ -20,15 +20,14 @@ export default function Header() {
             className='logo'
             avatarStyle='Transparent'
             topType='ShortHairShortCurly'
-            accessoriesType='Blank'
             hairColor='Black'
             facialHairType='Blank'
-            clotheType='Hoodie'
-            clotheColor='Red'
+            clotheType='GraphicShirt'
+            graphicType='Diamond'
+            clotheColor= 'Black'
             eyeType='Default'
             eyebrowType='DefaultNatural'
             mouthType='Smile'
-            skinColor='Pale'
           />
           <span className='ml-1'>Edgar Hovhannisyan</span>
         </a>

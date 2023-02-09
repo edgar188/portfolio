@@ -37,6 +37,7 @@ a {
     font-family: $font-bold;
     color: $color-base;
     border-bottom: 2px solid $color-base;
+    
     &:hover {
       opacity: $opacity-default
     }
@@ -45,7 +46,136 @@ a {
 
 .app {
   &.dark {
-    background: #282C34;
-    color: #fff;
+    background: $dark-bg-primary;
+    color: $color-light;
+
+    a {    
+      &:hover {
+        color: $dark-color-base;
+        opacity: $opacity-secondary;
+      }
+    
+      &.active {
+        color: $dark-color-base;
+        border-bottom: 2px solid $dark-color-base;
+      }
+    }
+
+    section {
+      h3 {
+        color: $dark-color-secondary;
+      }
+    }
+
+    header {      
+      nav {
+        & > ul {
+          color: $dark-color-text-secondary;
+          background: $dark-bg-primary;
+        }
+
+        & > a {
+          &.nav, &.close {
+            color: $dark-color-text-secondary;
+          }
+        }
+      }
+
+      .logo-link {
+        color: $dark-color-base;
+      }
+    }
+
+    footer {
+      color: $dark-color-text-secondary;
+
+      ul {
+        svg {
+          &.linkedin {
+            color: map-get($dark-color-socials, linkedin);
+          }
+    
+          &.github {
+            color: map-get($dark-color-socials, github);
+          }
+        }
+      }
+    }
+
+    section.home {
+      h1, p {
+        color: $dark-color-text-secondary;
+      }
+
+      .common-text {
+        color: $dark-color-base;
+      }
+
+      .css-9y1egq-MuiButtonBase-root-MuiButton-root {
+        color: $dark-color-base;
+        border-color: $dark-color-base;
+      }
+    }
+
+    section.about {
+      .list-about {
+        color: $dark-color-base;
+    
+        p {
+          color: $dark-color-text-primary;
+        }
+    
+        & > li {
+          color: $dark-color-text-secondary;
+        }
+      }
+    }
+
+    section.work {
+      .title-link {
+        color: $dark-color-base;
+      }
+    
+      .works-list {
+        color: $dark-color-text-secondary;
+      }
+    }
+
+    section.contact {
+      .socials {    
+        & > li {
+          color: $dark-color-text-secondary;
+    
+          a {
+            &:hover {
+              color: $dark-color-text-secondary;
+              opacity: $opacity-primary;
+            }
+          }
+    
+          svg {    
+            &.email {
+              color: map-get($dark-color-socials, email);
+            }
+    
+            &.linkedin {
+              color: map-get($dark-color-socials, linkedin);
+            }
+    
+            &.github {
+              color: map-get($dark-color-socials, github);
+            }
+    
+            &.skype {
+              color: map-get($dark-color-socials, skype);
+            }
+    
+            &.resume {
+              color: map-get($dark-color-socials, resume);
+            }
+          }
+        }
+      }
+    }
   }
 }

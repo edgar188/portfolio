@@ -25,19 +25,26 @@ header {
       display: none;
       font-size: 28px;
       position: relative;
-      z-index: $z-index-max;
+      z-index: $z-index-mid;
       cursor: pointer;
 
       &:hover {
         opacity: $opacity-default;
       }
+
+      &.nav, &.close {
+        @include position($pos: relative, $top: 10px);
+        color: $color-text-secondary;
+      }
     }
   }
 
   .logo-link {
+    @include position($pos: relative, $top: 4px);
     color: $color-base;
     font-size: $font-bs;
     font-family: $font-bold;
+    z-index: $z-index-max;
 
     &:hover {
       opacity: $opacity-default;
