@@ -41,12 +41,12 @@ export default function Header() {
           <Avatar
             className='logo'
             avatarStyle='Transparent'
-            topType={ modeChecked ? 'ShortHairShortRound' : 'ShortHairShortRound' }
+            topType='ShortHairShortRound'
             hairColor='Black'
             facialHairType='Blank'
+            clotheColor={ modeChecked ? 'Blue03' : 'Red' }
             clotheType={ modeChecked ? 'Hoodie' : 'GraphicShirt' }
             graphicType='Diamond'
-            clotheColor={ modeChecked ? 'Blue03' : 'Red' }
             eyeType='Default'
             eyebrowType='DefaultNatural'
             mouthType='Smile'
