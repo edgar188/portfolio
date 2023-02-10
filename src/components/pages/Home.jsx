@@ -10,7 +10,7 @@ const styles = {
     animationName: Radium.keyframes(rubberBand, 'rubberBand')
   },
   flipInY: {
-    animation: '1s',
+    animation: '2s',
     animationName: Radium.keyframes(flipInY, 'flipInY')
   }
 }

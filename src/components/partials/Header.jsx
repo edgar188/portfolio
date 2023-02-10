@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HOME, ABOUT, WORK, CONTACT } from '../../constants/paths';
 import { FaBars } from '@react-icons/all-files/fa/FaBars';
@@ -7,9 +7,31 @@ import Avatar from 'avataaars';
 import SwitchMode from '../fields/SwitchMode';
 
 export default function Header() {
+  const [modeChecked, setModeChecked] = useState(getModeCheckedValue());
+  
+  useEffect(() => {
+    if (modeChecked) {
+      let app = document.getElementById('app');
+      app.classList.add('dark');
+    }
+  }, [])
+
+  function handleModeChange(e) {
+    let checked = e.currentTarget.checked;
+    setModeChecked(checked);
+    localStorage.setItem('modeChecked', checked);
+   
+    let app = document.getElementById('app');
+    checked ? app.classList.add('dark') : app.classList.remove('dark');
+  }
+
   function handleClick() {
     let nav = document.getElementById('nav');
     nav.className = nav.classList.contains('show') ? '' : 'show';
+  }
+
+  function getModeCheckedValue() {
+    return localStorage.getItem('modeChecked') === 'true';
   }
   
   return (
@@ -19,15 +41,16 @@ export default function Header() {
           <Avatar
             className='logo'
             avatarStyle='Transparent'
-            topType='ShortHairShortCurly'
+            topType={ modeChecked ? 'ShortHairShortRound' : 'ShortHairShortRound' }
             hairColor='Black'
             facialHairType='Blank'
-            clotheType='GraphicShirt'
+            clotheType={ modeChecked ? 'Hoodie' : 'GraphicShirt' }
             graphicType='Diamond'
-            clotheColor= 'Black'
+            clotheColor={ modeChecked ? 'Blue03' : 'Red' }
             eyeType='Default'
             eyebrowType='DefaultNatural'
             mouthType='Smile'
+            skinColor='Pale'
           />
           <span className='ml-1'>Edgar Hovhannisyan</span>
         </a>
@@ -46,7 +69,7 @@ export default function Header() {
               <NavLink to={ CONTACT } activeclassname='active' onClick={handleClick}>Contact</NavLink>
             </li>
             <li>
-              <SwitchMode />
+              <SwitchMode modeChecked={modeChecked} handleModeChange={handleModeChange} />
             </li>
           </ul>
           <a className="btn-clear nav" onClick={handleClick}>

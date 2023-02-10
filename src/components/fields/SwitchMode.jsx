@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -51,32 +51,10 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-export default function SwitchMode() {
-  const [modeChecked, setModeChecked] = useState(getModeCheckedValue());
-
-  useEffect(() => {
-    if (modeChecked) {
-      let app = document.getElementById('app');
-      app.classList.add('dark');
-    }
-  }, [])
-
-  function handleChange(e) {
-    let checked = e.currentTarget.checked;
-    setModeChecked(checked);
-    localStorage.setItem('modeChecked', checked);
-   
-    let app = document.getElementById('app');
-    checked ? app.classList.add('dark') : app.classList.remove('dark');
-  }
-
-  function getModeCheckedValue() {
-    return localStorage.getItem('modeChecked') === 'true';
-  }
-
+export default function SwitchMode({modeChecked, handleModeChange}) {
   return (
     <FormGroup>
-      <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} checked={modeChecked} onChange={handleChange} />}/>
+      <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} checked={modeChecked} onChange={handleModeChange} />}/>
     </FormGroup>
   )
 }

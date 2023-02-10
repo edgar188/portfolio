@@ -22,7 +22,7 @@ body {
 
 main {
   @include position($pos: relative);
-  min-height: calc(100vh - 161px);
+  min-height: calc(100vh - 171px);
 }
 
 a {
