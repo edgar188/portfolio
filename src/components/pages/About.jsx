@@ -8,13 +8,12 @@ export default function About() {
           <h3>PROFESSIONAL EXPERIENCE</h3>
           <ul className='list-about'>
             <li>
-              <p className='mb-1'>Full-STACK(RUBY/ROR/REACT) DEVELOPER</p>
+              <p className='mb-1'>Full-STACK(ROR/REACT) DEVELOPER</p>
               <p>November 2022 - Present | STDev Armenia && Rankbreeze CA | Yerevan, Armenia</p>
               <ul className='mt-2'>
                 <li>Work on a dedicated project.</li>
                 <li>Experience working with an international team.</li>
-                <li>Experience working together with a teammate in different time zones.</li>
-                <li>Experience developing extensions for Chrome.</li>
+                <li>Experience collaborating with a teammate across multiple time zones.</li>
               </ul>
             </li>
             <li>
@@ -22,7 +21,7 @@ export default function About() {
               <p>March 2020 - November 2022 | STDev Armenia | Yerevan, Armenia</p>
               <ul className='mt-2'>
                 <li>Experience building and interacting with Restful APIs.</li>
-                <li>Experience writing unit tests, participating in design discussions, data shape and business logic.</li>
+                <li>Experience writing unit tests.</li>
                 <li>Experience with SQL databases.</li>
                 <li>Deep understanding and use of OOP principles.</li>
                 <li>Deep understanding and use of clean code concepts.</li>
@@ -33,7 +32,7 @@ export default function About() {
               <p className='mb-1'>FRONT-END DEVELOPER</p>
               <p>September 2019 - February 2020 | STDev Armenia | Yerevan, Armenia</p>
               <ul className='mt-2'>
-                <li>Decided on the design and structure of the web page.</li>
+                <li>Experience working with single-page applications.</li>
                 <li>Developed features to enhance the users experience.</li>
                 <li>Made sure web pages are optimized for the best speed and scalability.</li>
               </ul>
@@ -73,7 +72,7 @@ export default function About() {
           <ul className='list-about'>
             <li>Ruby, Ruby on Rails, Redis, RSpec, Sidekiq</li>
             <li>MySQL, PostgreSQL</li>
-            <li>JavaScript(ES6), React, Redux, Preact, jQuery, CoffeeScript</li>
+            <li>JavaScript(ES6), React, Redux, Preact, Stimulus, CoffeeScript</li>
             <li>HTML5, CSS3, SASS(SCSS), LESS, Bootstrap, Material-UI</li>
             <li>Figma, Adobe Photoshop, Adobe XD</li>
             <li>Jira, Trello, Linear</li>
@@ -82,19 +81,21 @@ export default function About() {
           <ul className='list-about'>
             <li>Work overtime based on team success and project outcomes.</li>
             <li>Good team player and willingness to help others.</li>
-            <li>Mentoring.</li>
+            <li>Mentoring and coaching.</li>
           </ul>
           <h3>LANGUAGES</h3>
           <ul className='list-about'>
-            <li>Armenian(Native)</li>
-            <li>English(Good)</li>
-            <li>Russian(Good)</li>
+            <li>Armenian(native)</li>
+            <li>English</li>
+            <li>Russian</li>
           </ul>
-          <h3>INTERESTS</h3>
+          <h3>INTERESTS & HOBBIES</h3>
           <ul className='list-about'>
-            <li>Classical guitar playing.</li>
-            <li>Swimming.</li>
-            <li>Hiking.</li>
+            <li>Keeping up with the latest developments in technology.</li>
+            <li>Reading books, articles.</li>
+            <li>Playing the guitar.</li>
+            <li>Playing team sports(soccer, basketball, volleyball).</li>
+            <li>Going out and eating at restaurants.</li>
           </ul>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import { rubberBand, flipInY } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
-import RESUME from '../../assets/images/resume.svg';
+import RESUME from '../../assets/files/Edgar_Hovhannisyan_cv.pdf';
 
 const styles = {
   rubberBand: {
@@ -27,7 +27,7 @@ export default function Home() {
             In addition, I've professional experience in front-end development.
           </p>
           <div style={ styles.rubberBand }>
-            <Button href={ RESUME } variant='outlined' size='large' download>Download CV</Button>
+            <Button href={ RESUME } variant='outlined' size='large' download>RESUME</Button>
           </div>
         </StyleRoot>
       </div>
