@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import { rubberBand, flipInY } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
-import RESUME from '../../assets/files/Edgar_Hovhannisyan_cv.pdf';
+import RESUME from '../../assets/files/Edgar_Hovhannisyan_resume.pdf';
 
 const styles = {
   rubberBand: {

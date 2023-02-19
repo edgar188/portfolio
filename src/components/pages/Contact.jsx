@@ -5,7 +5,7 @@ import { FaGithub } from '@react-icons/all-files/fa/FaGithub';
 import { FaAt } from '@react-icons/all-files/fa/FaAt';
 import { FaFile } from '@react-icons/all-files/fa/FaFile';
 import { EMAIL, LINKEDIN, GITHUB, SKYPE } from '../../constants/links';
-import RESUME from '../../assets/files/Edgar_Hovhannisyan_cv.pdf';
+import RESUME from '../../assets/files/Edgar_Hovhannisyan_resume.pdf';
 
 export default function Contact() {
   return (

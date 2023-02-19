@@ -12,27 +12,29 @@ export default function About() {
               <p>November 2022 - Present | STDev Armenia && Rankbreeze CA | Yerevan, Armenia</p>
               <ul className='mt-2'>
                 <li>Work on a dedicated project.</li>
-                <li>Experience working with an international team.</li>
                 <li>Experience collaborating with a teammate across multiple time zones.</li>
+                <li>Develop Chrome extensions using Preact.</li>
               </ul>
             </li>
             <li>
               <p className='mb-1'>RUBY DEVELOPER</p>
               <p>March 2020 - November 2022 | STDev Armenia | Yerevan, Armenia</p>
               <ul className='mt-2'>
+                <li>Participate in working on and developing projects in Rails 5 and 6.</li>
+                <li>Performed unit tests, shortened testing time, and fixed age issues.</li>
+                <li>Implemented coding best practices that reduced rework by 25%.</li>
                 <li>Experience building and interacting with Restful APIs.</li>
-                <li>Experience writing unit tests.</li>
                 <li>Experience with SQL databases.</li>
-                <li>Deep understanding and use of OOP principles.</li>
-                <li>Deep understanding and use of clean code concepts.</li>
-                <li>Was a mentor of the Ruby/RoR internship program.</li>
+                <li>In some periods, have worked 16 hours of overtime per week, reduced the estimate by 10%, and made the project a success at the right time.</li>
+                <li>Mentored a 3-month Ruby/RoR internship program and helped new individuals join the team.</li>
               </ul>
             </li>
             <li className='mt-3'>
               <p className='mb-1'>FRONT-END DEVELOPER</p>
               <p>September 2019 - February 2020 | STDev Armenia | Yerevan, Armenia</p>
               <ul className='mt-2'>
-                <li>Experience working with single-page applications.</li>
+                <li>Developed single-page applications using React lib and Redux state container.</li>
+                <li>The increased user experience by 15-20%.</li>
                 <li>Developed features to enhance the users experience.</li>
                 <li>Made sure web pages are optimized for the best speed and scalability.</li>
               </ul>
@@ -41,8 +43,8 @@ export default function About() {
               <p className='mb-1'>FRONT-END DEVELOPER</p>
               <p>June 2018 - September 2019 | Collaboratous | Yerevan, Armenia</p>
               <ul className='mt-2'>
-                <li>Worked on creating websites with fully responsive user interface design.</li>
                 <li>Participates in the development of templates in the style of Perfect Pixel.</li>
+                <li>Worked on creating websites with fully responsive user interface design.</li>
                 <li>Skilled in cross-browser/cross-platform issues and web standards.</li>
               </ul>
             </li>
