@@ -24,7 +24,9 @@ export default function Home() {
           <p>
             Software engineer specializing in the <span className='common-text'>Ruby</span> programming language and <span className='common-text'>Ruby on Rails</span> framework. 
             <br/>
-            In addition, I've professional experience in front-end development.
+            In addition, I've professional experience in front-end development. I'm focused on developing scalable and clean code. 
+            <br/>
+            I like to work in a team, but can also lead projects on my own.
           </p>
           <div style={ styles.rubberBand }>
             <Button href={ RESUME } variant='outlined' size='large' download>RESUME</Button>
